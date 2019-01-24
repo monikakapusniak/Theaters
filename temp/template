@@ -1,0 +1,35 @@
+<div class="container">
+  <div class="panel panel-info">
+    <div class="panel-body">
+      <div class="row">
+        <div class="col-md-12"> 
+          <div class="alert alert-info" role="alert">
+            <strong>Zaloguj się:</strong>
+          </div>
+
+
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+,
+
+    header("Cache-Control: no-store, no-cache, must-revalidate, max-age=0");
+
+//sprawdz czy zalogowany
+        if (!isset($_COOKIE['id'])) {
+        header("location: login.php");
+        exit;
+    }
+
+    $q = mysqli_fetch_assoc(mysqli_query($link, "select id_user from Session where 
+    id_cookie_session = '$_COOKIE[id]' and webbrowser = '$_SERVER[HTTP_USER_AGENT]' AND ip_address = '$_SERVER[REMOTE_ADDR]';"));
+
+    if (empty($q['id_user'])){
+        header("location: login.php");
+        exit;
+    } 
+

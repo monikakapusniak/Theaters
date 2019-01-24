@@ -1,0 +1,259 @@
+/* comments */
+ul.comments li {
+    list-style: none;
+    /* word-break: break-all; */
+}
+
+ul.comments {
+width: 100%;
+}
+
+.firstComment {
+    padding:0px;
+}
+
+ /* carousel */
+#quote-carousel 
+{
+  padding: 0 10px 30px 10px;
+  margin-top: 30px;
+}
+
+#quote-carousel .carousel-control
+{
+  background: none;
+  color: #222;
+  font-size: 2.3em;
+  text-shadow: none;
+  margin-top: 30px;
+}
+
+#quote-carousel .carousel-control.left 
+{
+  left: -12px;
+}
+
+#quote-carousel .carousel-control.right 
+{
+  right: -12px !important;
+}
+
+#quote-carousel .carousel-indicators 
+{
+  right: 50%;
+  top: auto;
+  bottom: 0px;
+  margin-right: -19px;
+}
+
+#quote-carousel .carousel-indicators li 
+{
+  background: #c0c0c0;
+}
+#quote-carousel .carousel-indicators .active 
+{
+  background: #333333;
+}
+#quote-carousel img
+{
+  width: 250px;
+  height: 100px
+}
+
+.item blockquote {
+    border-left: none; 
+    margin: 0;
+}
+
+.item blockquote img {
+    margin-bottom: 10px;
+}
+
+.item blockquote p:before {
+    content: "\f10d";
+    font-family: 'Fontawesome';
+    float: left;
+    margin-right: 10px;
+}
+
+@media (min-width: 768px) { 
+    #quote-carousel 
+    {
+      margin-bottom: 0;
+      padding: 0 40px 30px 40px;
+    }
+    
+}
+
+@media (max-width: 768px) { 
+    
+    /* Make the indicators larger for easier clicking with fingers/thumb on mobile */
+    
+    #quote-carousel .carousel-indicators {
+        bottom: -20px !important;  
+    }
+    #quote-carousel .carousel-indicators li {
+        display: inline-block;
+        margin: 0px 5px;
+        width: 15px;
+        height: 15px;
+    }
+    #quote-carousel .carousel-indicators li.active {
+        margin: 0px 5px;
+        width: 20px;
+        height: 20px;
+    }
+}
+
+ /* carousel 2*/
+ #quote-carousel2 
+ {
+   padding: 0 10px 30px 10px;
+   margin-top: 30px;
+ }
+ 
+ #quote-carousel2 .carousel-control
+ {
+   background: none;
+   color: #222;
+   font-size: 2.3em;
+   text-shadow: none;
+   margin-top: 30px;
+ }
+ 
+ #quote-carousel2 .carousel-control.left 
+ {
+   left: -12px;
+ }
+ 
+ #quote-carousel2 .carousel-control.right 
+ {
+   right: -12px !important;
+ }
+ 
+ #quote-carousel2 .carousel-indicators 
+ {
+   right: 50%;
+   top: auto;
+   bottom: 0px;
+   margin-right: -19px;
+ }
+ 
+ #quote-carousel2 .carousel-indicators li 
+ {
+   background: #c0c0c0;
+ }
+ #quote-carousel2 .carousel-indicators .active 
+ {
+   background: #333333;
+ }
+ #quote-carousel2 img
+ {
+   width: 250px;
+   height: 100px
+ }
+ 
+ .item blockquote {
+     border-left: none; 
+     margin: 0;
+ }
+ 
+ .item blockquote img {
+     margin-bottom: 10px;
+ }
+ 
+ .item blockquote p:before {
+     content: "\f10d";
+     font-family: 'Fontawesome';
+     float: left;
+     margin-right: 10px;
+ }
+ 
+ @media (min-width: 768px) { 
+     #quote-carousel2 
+     {
+       margin-bottom: 0;
+       padding: 0 40px 30px 40px;
+     }
+     
+ }
+ 
+ @media (max-width: 768px) { 
+     
+     /* Make the indicators larger for easier clicking with fingers/thumb on mobile */
+     
+     #quote-carousel2 .carousel-indicators {
+         bottom: -20px !important;  
+     }
+     #quote-carousel2 .carousel-indicators li {
+         display: inline-block;
+         margin: 0px 5px;
+         width: 15px;
+         height: 15px;
+     }
+     #quote-carousel2 .carousel-indicators li.active {
+         margin: 0px 5px;
+         width: 20px;
+         height: 20px;
+     }
+ }
+
+ /* blockquote */
+ blockquote{
+  color: #f5f5f5;
+  padding:1.2em 15px 1.2em 75px;
+  border-left:8px solid #447e9b;
+  border-right:1px solid #bce8f1;
+  border-top: 1px solid #bce8f1;
+  border-bottom: 1px solid #bce8f1;
+  line-height:1.6;
+  position: relative;
+  background:#EDEDED;
+}
+
+blockquote::before{
+  font-family:Arial;
+  content: "\201C";
+  color:#447e9b;
+  font-size:4em;
+  position: absolute;
+  left: 10px;
+  top:-10px;
+}
+
+blockquote::after{
+  content: '';
+}
+
+blockquote span{
+  display:block;
+  color:#333333;
+  margin-top:1em;
+  font-size: small
+}
+
+/* rating system */
+.star-rating {
+  direction: rtl;
+  display: inline-block;
+  padding: 20px
+}
+
+.star-rating input[type=radio] {
+  display: none
+}
+
+.star-rating label {
+  color: #bbb;
+  font-size: 18px;
+  padding: 0;
+  cursor: pointer;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out
+}
+
+.star-rating label:hover,
+.star-rating label:hover ~ label,
+.star-rating input[type=radio]:checked ~ label {
+  color: #f2b600
+}

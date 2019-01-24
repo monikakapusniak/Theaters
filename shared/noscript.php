@@ -1,0 +1,3 @@
+<?php
+    echo "WŁĄCZ OBSŁUGĘ JAVASCRIPT W SWOJEJ PRZEGLĄDARCE!";
+?>
