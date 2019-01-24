@@ -1,0 +1,4 @@
+"id_address","street","number","id_city","postal_code"
+"1","Testowa","2","1","3-340"
+"2","Monitor","3","2","12-340"
+"3","Wierzbowa","1293","2","30-293"
